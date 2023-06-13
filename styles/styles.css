@@ -142,7 +142,7 @@ section {
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .theme-btn:active {
   transform: translateY(-3px);
@@ -195,7 +195,7 @@ section {
   filter: grayscale(100%);
 }
 .header-content .left-header .image img:hover {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   transform: scale(1.025);
   filter: grayscale(0) contrast(110%);
 }
@@ -221,51 +221,34 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3.5rem;
 }
 .about-container .right-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+.about-container .right-about img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 15px;
 }
 .about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
-  border-radius: 5px;
   transition: all 0.4s ease-in-out;
-  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .about-container .right-about .about-item:hover {
   cursor: default;
-  transform: translateY(-5px);
-  border: 1px solid var(--color-secondary);
-  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-}
-.about-container .right-about .about-item .abt-text {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-.about-container .right-about .about-item .abt-text .large-text {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-.about-container .right-about .about-item .abt-text .small-text {
-  padding-left: 3rem;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: var(--color-grey-1);
-  letter-spacing: 2px;
-}
-.about-container .right-about .about-item .abt-text .small-text::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 15px;
-  width: 2rem;
-  height: 2px;
-  background-color: var(--color-grey-5);
+  transform: scale(1.025);
 }
 .about-container .left-about {
   padding-right: 5rem;
@@ -412,24 +395,24 @@ section {
   text-align: center;
 }
 
-.projectss {
+.projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
-.projectss .projects-item {
+.projects .projects-item {
   position: relative;
   border-radius: 15px;
 }
-.projectss .projects-item img {
+.projects .projects-item img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-.projectss .projects-item .hover-items {
+.projects .projects-item .hover-items {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
@@ -445,17 +428,17 @@ section {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
-.projectss .projects-item .hover-items h3 {
+.projects .projects-item .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
-.projectss .projects-item .hover-items .icons {
+.projects .projects-item .hover-items .icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.projectss .projects-item .hover-items .icons .icon {
+.projects .projects-item .hover-items .icons .icon {
   background-color: var(--color-primary);
   border-radius: 50%;
   width: 50px;
@@ -467,16 +450,23 @@ section {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.projectss .projects-item .hover-items .icons .icon i {
+.projects .projects-item .hover-items .icons .icon i {
   font-size: 1.5rem;
   color: var(--color-white);
   margin: 0 1rem;
 }
-.projectss .projects-item .hover-items .icons .icon:hover {
+.projects .projects-item .hover-items .icons .icon:hover {
   background-color: var(--color-white);
 }
-.projectss .projects-item .hover-items .icons .icon:hover i {
+.projects .projects-item .hover-items .icons .icon:hover i {
   color: var(--color-primary);
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px;
 }
 
 .projects-item:hover .hover-items {
@@ -632,7 +622,7 @@ section {
   justify-content: flex-start;
 }
 
-/*Independed components*/
+/*Independent components*/
 .btn-con {
   display: flex;
   align-self: flex-start;
