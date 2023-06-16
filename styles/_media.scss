@@ -80,13 +80,13 @@
     }
 
     .portfolios{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         padding-bottom: 6rem;
         margin-top: 1rem;
     }
 
     .blogs{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         padding-bottom: 6rem;
     }
 
