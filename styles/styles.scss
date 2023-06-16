@@ -427,14 +427,14 @@ section {
 
 .interests {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
   .interests-item {
     position: relative;
     border-radius: 15px;
-    margin: 4rem;
+    margin: 3rem;
     img {
       width: 100%;
       height: 400px;
@@ -473,7 +473,7 @@ section {
 //projects Section
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 3rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
