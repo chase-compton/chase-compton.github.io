@@ -369,7 +369,7 @@ section {
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
-  margin-bottom: 15px;
+  margin-bottom: 5rem;
 }
 .timeline-exp .timeline-item {
   position: relative;
@@ -414,7 +414,8 @@ section {
 .timeline-exp .timeline-item p {
   color: var(--color-grey-2);
 }
-.timeline-exp .timeline-item p .resume-links {
+
+.resume-links {
   color: var(--color-secondary);
 }
 
@@ -428,6 +429,7 @@ section {
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 .interests .interests-item {
   position: relative;
@@ -473,6 +475,7 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 3rem;
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 .projects .blog {
   position: relative;
@@ -634,6 +637,7 @@ section {
   align-items: center;
   overflow: hidden;
   margin: 2px;
+  background: none;
 }
 .main-btn .btn-text {
   padding: 0 2rem;

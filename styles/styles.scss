@@ -368,7 +368,7 @@ section {
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
-  margin-bottom: 15px;
+  margin-bottom: 5rem;
   .timeline-item {
     position: relative;
     padding-left: 3rem;
@@ -410,12 +410,15 @@ section {
     }
     p {
       color: var(--color-grey-2);
-      .resume-links {
-        color: var(--color-secondary);
-      }
     }
   }
 }
+
+.resume-links {
+  color: var(--color-secondary);
+}
+
+
 //interests
 .port-text {
   padding: 2rem 0;
@@ -427,6 +430,7 @@ section {
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+  margin-bottom: 5rem;
   .interests-item {
     position: relative;
     border-radius: 15px;
@@ -472,6 +476,7 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 3rem;
   margin-top: 3rem;
+  margin-bottom: 5rem;
   .blog {
     position: relative;
     background-color: var(--color-grey-5);
@@ -637,6 +642,7 @@ section {
   align-items: center;
   overflow: hidden;
   margin: 2px;
+  background: none;
   .btn-text {
     padding: 0 2rem;
   }
