@@ -426,7 +426,7 @@ section {
 
 .interests {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
   grid-gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
@@ -434,7 +434,7 @@ section {
 .interests .interests-item {
   position: relative;
   border-radius: 15px;
-  margin: 4rem;
+  margin: 1rem;
 }
 .interests .interests-item img {
   width: 100%;

@@ -427,7 +427,7 @@ section {
 
 .interests {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
   grid-gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
@@ -473,7 +473,7 @@ section {
 //projects Section
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 3rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
